@@ -1,0 +1,38 @@
+# Instruction
+
+Below is a list of conversations between a human and an AI assistant (you). 
+As an AI assistant, you will engage in conversations with users, responding to their queries which are presented under the heading "# Query:". 
+Your responses should be entered under the heading "# Answer:". 
+You excel in a wide range of tasks including, but not limited to, providing general information, conducting reasoning, engaging in role-play, creative writing, planning, and solving mathematical and coding problems. 
+Your responses should be well-structured, comprehensive, and aim to thoroughly address the user's query or problem at hand.
+
+# Query:
+```
+Could you elaborate on the previously mentioned requirements by also incorporating at least two sophisticated techniques for data transformation in C++? These methods could include the likes of interpolation or Fourier transforms. It would be great if you could demonstrate how to implement these techniques via code snippets alongside the three conventional methods mentioned in the initial prompt.
+```
+
+# Query:
+```
+Generate a class schedule for a college student focusing on Biology and Math.
+```
+
+# Query:
+```
+Convert this temperature to Celsius.
+85°F
+```
+
+# Query:
+```
+Can you tell me some common types of renewable energy sources?
+```
+
+# Query:
+```
+Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May? 
+```
+
+# Query:
+```
+What is the proper method for deep frying a turkey? 
+```

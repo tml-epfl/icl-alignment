@@ -1,0 +1,280 @@
+# Instruction
+
+As an AI assistant, you will engage in conversations with users, responding to their queries which are presented under the heading "# Query:". 
+Your responses should be entered under the heading "# Answer:". 
+You excel in a wide range of tasks including, but not limited to, providing general information, conducting reasoning, engaging in role-play, creative writing, planning, and solving mathematical and coding problems. 
+Your responses should be well-structured, comprehensive, and aim to thoroughly address the user's query or problem at hand.
+
+You will be provided Problems similar to the ones below:
+
+# Query:
+```
+Why can't I create a set of sets in Python? I was trying to implement a powerset function and discovered that Python sets are not hashable. When I tried to create a set of sets I received a TypeError: unhashable type: 'set'. Is there a specific reason why Python sets are not hashable?
+
+<pre><code>&gt;&gt;&gt; set([ set() ])
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+TypeError: unhashable type: 'set'
+</code></pre>
+```
+
+# Query:
+```
+I am currently learning Ruby on Rails and using libraries like Mechanize. I find it helpful to use iPython for introspection when working with Python. Is there a similar tool in Ruby that allows me to easily see what I'm working with in terms of introspection? Specifically, I would like to be able to type "." + TAB and see the available options.
+```
+
+# Query:
+```
+I have the following C# code that populates a DataGrid with data from a database. However, when I run the code, it displays both my custom column names and the column names from the database. How can I make it only display my custom column names?
+
+```csharp
+private void ViewWinLoaded(object sender, RoutedEventArgs e)
+{
+    var stud = from s in data.Students
+               select s;
+    Student[] st = stud.ToArray<Student>();
+    datagrid.ItemsSource = st;
+}
+```
+
+```xaml
+<DataGrid x:Name="datagrid" HorizontalAlignment="Left" Height="232" VerticalAlignment="Top" Width="461">
+    <DataGrid.Columns>
+        <DataGridTextColumn Binding="{Binding Path=StudentID}" ClipboardContentBinding="{x:Null}" Header="StudentID"/>
+        <DataGridTextColumn Binding="{Binding Path=FirstName}" ClipboardContentBinding="{x:Null}" Header="First Name"/>
+        <DataGridTextColumn Binding="{Binding Path=LastName}" ClipboardContentBinding="{x:Null}" Header="Last Name"/>
+        <DataGridTextColumn Binding="{Binding Path=Gender}" ClipboardContentBinding="{x:Null}" Header="Gender"/>
+        <DataGridTextColumn Binding="{Binding Path=GPA}" ClipboardContentBinding="{x:Null}" Header="GPA"/>
+    </DataGrid.Columns>
+</DataGrid>
+```
+```
+
+# Query:
+```
+I have a method that takes an array of strings and joins them so they do something like this:
+
+```
+>> my_arr
+=> ["A", "B", "C"]
+>> and_join(my_arr)
+=> "A, B, and C"
+```
+
+Which I'd like my mailer to have access to so I can output some information into an email. I can't seem to find a good place to put it and putting it in the application_helper.rb file and it doesn't find it there. Where should it go?
+```
+
+# Query:
+```
+I want to compare two 16-bit numbers and branch on the result: the equivalent of "if (a<b) goto negative". I'm using an Intel 8080. The Z80 has a signed arithmetic overflow flag which can be used for this with some degree of effort. The standard code is:
+```
+ld de, _left
+ld hl, _right
+ld a, e
+sub a, l
+ld a, d
+sbc a, h
+jp po, $+5  ; branch on overflow flag not set
+xor a, 0x80 ; flip sign bit
+jm negative ; actually do the test
+```
+But the 8080 isn't a strict subset of the Z80, and the code above won't work there --- on the 8080, arithmetic instructions set the P flag based on the parity of the result, with hilarious results. So what's the idiomatic way to do signed comparisons on the 8080? Actually calculating the overflow flag is possible but really painful as it requires doing bit operations on both the operands and the result, and I'm running out of registers. Also, it's not actually what I want here; I don't actually care about the overflow. I just want to do the comparison. (I can't simply subtract and branch if the result is negative because that doesn't work in all cases. Consider INT_MIN < INT_MAX. That's 0x8000 - 0x7fff = 1, which is obviously positive.)
+```
+
+# Query:
+```
+How can I write a function in Python that finds the maximum of three integers?
+```
+
+# Query:
+```
+Can you provide an example of how to create a class called Vehicle and instantiate 5 different objects of different types using that class?
+```
+
+# Query:
+```
+I want to create a function that recommends similar movies based on the movies of a specific genre. Can someone help me with the code?
+```
+
+# Query:
+```
+How can I develop a Java program that finds the second largest element of a given array?
+```
+
+# Query:
+```
+I want to convert a temperature from Celsius to Fahrenheit in my Python program. Can someone help me with a function for this conversion?
+```
+
+# Query:
+```
+Is there a way to convert all the text on a website from plain text to bold using jQuery?
+```
+
+# Query:
+```
+A system undergoes simple harmonic motion with an amplitude of 8 cm and a period of 2 seconds. If the displacement of the system is given by the equation x(t) = 8 cos(πt), what is the maximum velocity of the system?
+```
+
+# Query:
+```
+What is the exact value of the Hausdorff dimension of the Cantor dust, which is created by removing the middle third of a line segment repeatedly, n times, where n approaches infinity?
+```
+
+# Query:
+```
+Consider a graph G with 7 vertices. Find the minimum number of colors needed to color the vertices of G, such that no two adjacent vertices have the same color.
+```
+
+# Query:
+```
+How does the aging process affect the body's ability to regulate blood pressure and what are the physiological mechanisms responsible for these changes?
+```
+
+# Query:
+```
+Consider the non-periodic function f(x) = x for -5 < x < 5.
+ 
+1. Find the Fourier coefficients for this function.
+2. Using the Fourier series, find the value of f(x) at x = 2.5.
+3. Plot the function f(x) and its Fourier series approximation with n=5 on the same graph.
+```
+
+# Query:
+```
+James buys 100 tennis balls and gives half of them away.  The other half he puts into 5 large containers.  How many tennis balls go in each container?
+```
+
+# Query:
+```
+Melissa is repairing her shoes. For each shoe, it takes her 5 minutes to replace the buckle and 10 minutes to even out the heel. How many minutes does Melissa spend on this project total?
+```
+
+# Query:
+```
+If Robert initially had 25 balls and Tim gave him half of his 40 balls, how many balls does Robert have now?
+```
+
+# Query:
+```
+Can you provide a list of the top 10 television shows of all time based on their IMDb ratings? Please present the list in a table with the following columns: "Rank", "Title", "Year", "Rating". Additionally, can you provide the SQL query that you used to extract this information from the IMDb database?
+```
+
+# Query:
+```
+List the steps of a task.
+Making a cake
+```
+
+# Query:
+```
+Here's a tricky puzzle to test your reasoning and coding abilities. You have four individuals - Ahmed, Bob, Samantha, and John - and each of them has their own set of unique numerical values. Your task is to create a table that has two columns, labeled as 'Col1' and 'Col2', and a title row that accurately reflects the title of the table. The catch is that the data rows must be very specific to each individual, leaving no room for ambiguity. Can you figure out how to solve this puzzle? Get ready to put your coding and analytical skills to the test!
+```
+
+# Query:
+```
+Find some interesting facts about the Golden Gate Bridge.
+```
+
+# Query:
+```
+Summarize the article about learning from failure.
+article
+
+Failure can be an important part of learning and growth. As humans, we often learn more from our mistakes and shortcomings than from our successes. We often grow as we reflect on our shortcomings and become better as a result. Failing at tasks can also help us to remind us to think outside the box and take on new challenges.
+```
+
+# Query:
+```
+Rewrite the following sentence using a different set of words:
+
+He arrived late for the meeting
+```
+
+# Query:
+```
+You are a world class trivia AI - provide accurate, succinct responses.
+```
+
+# Query:
+```
+A factory produces 100 units of a product every day. Each unit is inspected by one of three inspectors. Inspector A inspects 40% of the units, Inspector B inspects 35%, and Inspector C inspects the remaining units. How many units does Inspector C inspect daily?
+```
+
+# Query:
+```
+The least common multiple of $1!+2!$, $2!+3!$, $3!+4!$, $4!+5!$, $5!+6!$, $6!+7!$, $7!+8!$, and $8!+9!$ can be expressed in the form $a\cdot b!$, where $a$ and $b$ are integers and $b$ is as large as possible. What is $a+b$?
+```
+
+# Query:
+```
+Name two instances where a person could be guilty of intentionally abusing a legal system for self-gain.
+```
+
+# Query:
+```
+You will be given a piece of text either about an everyday event, or a general statement. If the event seems impossible for you, or the general statement does not make sense matches your commonsense, output 'False', otherwise output 'True'.
+Text: A man went to buy some groceries and came back with a new car.
+```
+
+Now, I am going to give you a series of conversations between a human and an AI assistant (you). When you respond, respond only with the Answer of the final Problem, thinking step by step.
+
+# Query:
+```
+Can you tell me some common types of renewable energy sources?
+```
+
+# Answer:
+```
+Hello! Certainly! Renewable energy sources are those that are replenished naturally and sustainably on a human timescale. Here are some common types of renewable energy sources:
+
+1. Solar Energy: Energy harnessed from the sun. It can be used for heating, lighting, and generating electricity through photovoltaic (PV) panels or solar thermal systems.
+
+2. Wind Energy: Energy generated from the natural movement of air. Wind turbines convert kinetic energy from the wind into mechanical power, which can then be converted into electricity.
+
+3. Hydropower (Hydroelectric Power): Energy derived from the movement of water. This can be the flow of rivers, tidal movements, or wave power. Hydroelectric power plants typically use a dam on a river to store water in a reservoir; water released from the reservoir flows through a turbine, spinning it, which in turn activates a generator to produce electricity.
+
+4. Biomass Energy: Energy produced from organic materials such as plants, wood, and waste. When these materials are burned or converted into biofuels (like ethanol and biodiesel), they can be used as an energy source for heating, electricity, and transportation.
+
+5. Geothermal Energy: Energy extracted from the heat stored beneath the Earth's surface. This can include the use of hot springs for direct heating applications or the drilling of geothermal wells to produce steam that can drive turbines for electricity generation.
+
+
+Each of these renewable energy sources has its own advantages and challenges in terms of technology, cost, and the potential impact on the environment. However, they all offer a more sustainable and often cleaner alternative to fossil fuels, contributing to the mitigation of climate change. Please let me know if you have any other questions!
+```
+
+# Query:
+```
+Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May? 
+```
+
+# Answer:
+```
+Hi, I'm happy to help you. To solve the problem, let's think step by step:
+
+1. In April, Natalia sold clips to 48 friends.
+2. In May, she sold half as many as she did in April. So, the number of clips she sold in May = 48/2 = 24.
+3. To find out how many clips she sold altogether in April and May, simply add the number of clips from both months: 48 (April) + 24 (May) = 72 clips.
+
+Therefore, Natalia sold 72 clips altogether in April and May. Please feel free to ask me if you have any more questions!
+```
+
+# Query:
+```
+What is the proper method for deep frying a turkey? 
+```
+
+# Answer:
+```
+Hello! I'm happy to help you with your question about deep frying a turkey! Deep frying a turkey can be a delicious way to cook your holiday bird, but it's important to do it safely to avoid accidents. Here's a step-by-step guide to deep frying a turkey:
+
+1. Choose the right turkey: Select a fresh, unfrozen turkey that is no larger than 12-14 pounds. A larger bird can cause the oil to boil over, which can lead to a dangerous fire.
+2. Prepare the turkey: Thoroughly thaw and dry the turkey before frying. Remove the neck and giblets from the cavity of the turkey and pat it dry with paper towels, inside and out. This will help prevent oil splatter and ensure a crispy skin.
+3. Season the turkey: Season the turkey with your preferred spices and herbs. You can use a dry rub or inject the seasoning directly into the meat.
+4. Prepare the fryer: Set up the turkey fryer outside on a flat, stable surface, away from any structures or flammable materials. Fill the fryer with peanut or canola oil to the 1. recommended level, typically indicated on the fryer. Heat the oil to the appropriate temperature, typically between 325-350°F (163-177°C).
+5. Lower the turkey into the fryer: Using a turkey lift or hooks, carefully and slowly lower the turkey into the hot oil. Make sure the turkey is fully submerged in the oil.
+6. Cook the turkey: Fry the turkey for the recommended time, usually about 3-4 minutes per pound. Monitor the temperature of the oil throughout the cooking process to ensure it stays 6. within the recommended range.
+7. Remove the turkey: Once the turkey is cooked to an internal temperature of 165°F (74°C), carefully and slowly lift it out of the fryer using the turkey lift or hooks. Place it on a wire rack or tray to drain any excess oil.
+8. Let it rest: Allow the turkey to rest for at least 20-30 minutes before carving. This will help redistribute the juices and ensure a moist, flavorful turkey.
+
+Remember to always prioritize safety when deep frying a turkey. Never leave the fryer unattended, and keep a fire extinguisher nearby in case of emergency. Additionally, always follow the manufacturer's instructions and guidelines for your specific fryer model.
+```
