@@ -2,6 +2,8 @@
 
 <a href="https://marcelluszhao.github.io/">Hao Zhao</a>, <a href="https://www.andriushchenko.me/">Maksym Andriushchenko</a>, <a href="https://scholar.google.com/citations?user=laq9cq0AAAAJ&hl=zh-CN">Francesco Croce</a>, <a href="https://people.epfl.ch/nicolas.flammarion">Nicolas Flammarion</a> (EPFL)
 
+**Paper:** [https://arxiv.org/abs/2405.19874](https://arxiv.org/abs/2405.19874)
+
 > TL;DR: We uncover that, unlike for tasks such as classification, translation, or summarization, adding more ICL demonstrations for long-context LLMs does not systematically improve instruction following performance, even with more sophisticated approaches. Moreover, we show that
 > - While ICL alignment with **URIAL** (ICLR'24: Untuned LLMs with Restyled In-context Alignment) is effective, it still underperformn compared to instruction fine-tuning on established benchmarks such as MT-Bench and AlpacaEval 2.0 (LC), especially with more capable base LMs.
 > - For instruction-following tasks, the demonstrations need to be carefully chosen and of high quality, with correct answers to each question, which departs from findings in prior work (<a href="https://arxiv.org/abs/2202.12837">Min et al., 2022</a>).
@@ -55,10 +57,22 @@ One can find standardized code for evaluation we did in our paper from:
 - <a href="https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge">MT-Bench</a>
 - <a href="https://github.com/tatsu-lab/alpaca_eval">AlpacaEval 2.0</a>
 
-## Citation 
+## Citation
 
+If you find this useful in your research, please consider citing:
 
-## Acknowledgement
+```
+@misc{zhao2024incontext,
+      title={Is In-Context Learning Sufficient for Instruction Following in LLMs?}, 
+      author={Hao Zhao and Maksym Andriushchenko and Francesco Croce and Nicolas Flammarion},
+      year={2024},
+      eprint={2405.19874},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
+
+## Acknowledgements
 
 We thank the following open-sourced repositories. If aspects of these repositories appearing in our work are useful to your research, we ask that you consider citing the accompanying papers.
 
