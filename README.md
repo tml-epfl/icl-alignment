@@ -4,6 +4,8 @@
 
 **Paper:** [https://arxiv.org/abs/2405.19874](https://arxiv.org/abs/2405.19874)
 
+**ICLR 2025**
+
 > TL;DR: We uncover that, unlike for tasks such as classification, translation, or summarization, adding more ICL demonstrations for long-context LLMs does not systematically improve instruction following performance, even with more sophisticated approaches. Moreover, we show that
 > - While ICL alignment with **URIAL** (ICLR'24: Untuned LLMs with Restyled In-context Alignment) is effective, it still underperformn compared to instruction fine-tuning on established benchmarks such as MT-Bench and AlpacaEval 2.0 (LC), especially with more capable base LMs.
 > - For instruction-following tasks, the demonstrations need to be carefully chosen and of high quality, with correct answers to each question, which departs from findings in prior work (<a href="https://arxiv.org/abs/2202.12837">Min et al., 2022</a>).
